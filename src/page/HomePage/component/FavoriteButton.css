@@ -1,0 +1,11 @@
+.input-style{
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    margin-left: 295px;
+    border: solid black 2px;
+    border-radius: 3px;
+    background: rgb(255, 255, 255);
+
+}
+
