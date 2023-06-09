@@ -5,12 +5,14 @@ import { FavoriteButton } from "./FavoriteButton";
 import './Detail.css'
 import { HiOutlineInformationCircle } from "react-icons/hi";
 
+// This is a page, should be at the same level as Homepage
 export const Details = () => {
     const { restaurants } = useContext<ContextRestaurantsType>(ContextRestaurants);
     const {id} = useParams();
     
     const selectedRestaurant = restaurants.find(restaurant => restaurant.id === (id? parseInt(id) : undefined))
     
+    // Nice fallback
     if(!selectedRestaurant){
         return <div>Restaurant introuvable</div>
     }
