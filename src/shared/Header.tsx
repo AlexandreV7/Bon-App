@@ -1,7 +1,7 @@
 import './Header.css'
 
 import { Link } from "react-router-dom"
-import { Favorites } from "../page/HomePage/component/Favorites"
+
 
 export const Header = () => {
     return (
@@ -10,7 +10,7 @@ export const Header = () => {
           <div>BonApp'</div>
         </Link>
         <Link to="/favorites/" id="link-favorite-style">
-          <div>Favorite</div>
+          <div>Favorites</div>
         </Link>
       </div>
     );

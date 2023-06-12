@@ -2,8 +2,9 @@ import { useContextFavorites } from "../../../context/ContextFavorites";
 import { Card } from "./Card";
 import ContextRestaurants from "../../../context/ContextRestaurants";
 import { ContextRestaurantsType } from "../../../context/ContextRestaurants";
-import { useContext, useEffect, useState } from "react";
-
+import { useContext} from "react";
+import './Favorites.css'
+import { AiFillHeart } from "react-icons/ai";
 
 export const Favorites = () => {
 
@@ -17,7 +18,10 @@ export const Favorites = () => {
 
 
     return (
-        <div>
+      <div className="favorites">
+        <h1 className="favorite-title">Your favorites</h1>
+        <AiFillHeart id="heart-icon" />
+        <div className="container">
           {favoriteRestaurant.map((restaurant) => (
             <Card
               key={restaurant.id}
@@ -29,5 +33,6 @@ export const Favorites = () => {
             />
           ))}
         </div>
+      </div>
     );
 };
