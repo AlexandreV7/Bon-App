@@ -1,9 +1,11 @@
 import { useContextFavorites } from "../../../context/ContextFavorites"
 import './FavoriteButton.css'
+import { AiOutlineHeart } from "react-icons/ai";
+import {AiFillHeart} from "react-icons/ai"
 
 interface FavoriteButtonProps{
     id:number
-}
+} 
 
 export const FavoriteButton = ({id}: FavoriteButtonProps) => {
 
@@ -19,12 +21,21 @@ export const FavoriteButton = ({id}: FavoriteButtonProps) => {
       }
     };
  
-    return(
-        <input
+    return (
+      <div className="favorite-button">
+        <label htmlFor="checkbox" className="heart-checkbox">
+          <input
             type="checkbox"
             checked={isFavorites}
             onChange={handleChange}
-            className="input-style"
-            />
-    )
+            className="checkbox"
+          />
+          {isFavorites ? (
+            <AiFillHeart className="heart-icon filled" />
+          ) : (
+            <AiOutlineHeart className="heart-icon" />
+          )}
+        </label>
+      </div>
+    );
 }

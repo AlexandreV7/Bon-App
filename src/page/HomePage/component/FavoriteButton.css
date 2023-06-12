@@ -1,11 +1,19 @@
-.input-style{
-    cursor: pointer;
-    width: 30px;
-    height: 30px;
-    margin-left: 295px;
-    border: solid black 2px;
-    border-radius: 3px;
-    background: rgb(255, 255, 255);
-
+.favorite-button{
+    background: rgb(26, 23, 47);
+}
+.heart-checkbox{
+    color: rgb(255, 255, 255);
+}
+.heart-icon {   
+    color: red;
+    font-size: 20px;
+    margin-right: auto;
+    margin-left: -24px;
 }
 
+.checkbox{
+    opacity: 3;
+    width: 22px;
+    height: 25px;
+    opacity: 0;
+}

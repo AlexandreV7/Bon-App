@@ -1,15 +1,21 @@
+ @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+ 
  .header-style{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: white;
+    background: rgb(26, 23, 47);
     max-width: 100vw;
-    height: 100px;
-    font-size: 30px;
+    height: 70px;
+    font-size: 40px;
+    font-weight: 600;
+    font-family: Dancing Script;
     padding: 20px;
+    border-bottom: solid black 2px;
     
 }
 
-#link-header-style{
+#link-favorite-style, #link-header-style{
     text-decoration: none;
+    color: rgb(255, 255, 255)
 } 
