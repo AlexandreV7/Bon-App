@@ -7,6 +7,8 @@ interface FavoriteButtonProps{
     id:number
 } 
 
+// This is really a good way of using React ;)
+// Small and reusable components containing only the relevant
 export const FavoriteButton = ({id}: FavoriteButtonProps) => {
 
     const {favorites, addFavorite, removeFavorite} = useContextFavorites()

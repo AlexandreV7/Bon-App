@@ -37,6 +37,8 @@ export const ContextFavoritesProvider = ({children} : any) => {
         });
     };
 
+  // This function does not remove the favorite, it display the modal
+  // Careful with the names ;)
    const removeFavorite = (id: number) => {
      setSelectedRestaurant(id);
      setShowModal(true);
@@ -64,6 +66,7 @@ export const ContextFavoritesProvider = ({children} : any) => {
         value={{ favorites, addFavorite, removeFavorite }}
       >
         {showModal && (
+          // Nice to use the Modal here ! Very clean
           <Modal
             onClose={() => setShowModal(false)}
             onConfirm={handleConfirmModal}

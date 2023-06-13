@@ -6,6 +6,7 @@ import { useContext} from "react";
 import './Favorites.css'
 import { AiFillHeart } from "react-icons/ai";
 
+// This is a page, should be at the same level as Homepage
 export const Favorites = () => {
 
     const {favorites} = useContextFavorites();
