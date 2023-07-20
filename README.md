@@ -5,7 +5,7 @@
 This project is an application that allows users to find a list of restaurants and access information (menus and descriptions) of each restaurant on a dedicated page. Additionally, users can add restaurants to their favorites list, which will be visible on a separate page.
 Technologies Used:
 
-    TypeScript
+    React(tsx)
     HTML
     CSS
     JavaScript
